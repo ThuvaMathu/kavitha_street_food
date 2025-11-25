@@ -63,7 +63,7 @@ kavitha_street_food/
 │       ├── metadata.ts     # SEO metadata generation
 │       └── index.ts        # Exports
 ├── public/
-│   ├── logos/logo.svg      # ✅ Your logo (already added)
+│   ├── logos/logo.png      # ✅ Your logo (already added)
 │   ├── og-image.jpg        # ⏳ TODO: Create this (1200x630)
 │   ├── apple-touch-icon.png # ⏳ TODO: Create this (180x180)
 │   └── images/             # Menu item images
@@ -84,17 +84,17 @@ Edit `/utils/config.ts`:
 ```typescript
 export const siteConfig = {
   contact: {
-    phone: "+61 412 345 678",     // ⬅️ UPDATE
-    email: "hello@kavithastreetfoods.com.au",  // ⬅️ UPDATE
+    phone: "+61 412 345 678", // ⬅️ UPDATE
+    email: "hello@kavithastreetfoods.com.au", // ⬅️ UPDATE
     address: {
-      street: "South Bank Parklands",  // ⬅️ UPDATE
+      street: "South Bank Parklands", // ⬅️ UPDATE
       // ...
     },
   },
   social: {
-    facebook: "...",   // ⬅️ UPDATE
-    instagram: "...",  // ⬅️ UPDATE
-    twitter: "...",    // ⬅️ UPDATE
+    facebook: "...", // ⬅️ UPDATE
+    instagram: "...", // ⬅️ UPDATE
+    twitter: "...", // ⬅️ UPDATE
   },
 };
 ```
@@ -103,10 +103,10 @@ export const siteConfig = {
 
 Create 2 images and save to `/public/`:
 
-| Image | Size | File |
-|-------|------|------|
-| Social sharing preview | 1200 x 630 | `og-image.jpg` |
-| iOS home screen icon | 180 x 180 | `apple-touch-icon.png` |
+| Image                  | Size       | File                   |
+| ---------------------- | ---------- | ---------------------- |
+| Social sharing preview | 1200 x 630 | `og-image.jpg`         |
+| iOS home screen icon   | 180 x 180  | `apple-touch-icon.png` |
 
 📖 See [IMAGE_REQUIREMENTS.md](./IMAGE_REQUIREMENTS.md) for details
 
@@ -115,6 +115,7 @@ Create 2 images and save to `/public/`:
 ## 🎨 Design
 
 - **Color Scheme:**
+
   - Background: Zinc-900 (dark)
   - Accent: Amber-500 (gold/orange)
   - Text: Amber-100 (light gold)
@@ -128,6 +129,7 @@ Create 2 images and save to `/public/`:
 ## 🔍 SEO Features
 
 ### Implemented:
+
 ✅ **Location Targeting** - Brisbane, South Bank
 ✅ **Audience Targeting** - Indian, Sri Lankan, Australian
 ✅ **Structured Data** - Local Business, Restaurant, Menu schemas
@@ -139,6 +141,7 @@ Create 2 images and save to `/public/`:
 ✅ **Performance** - Fast loading with Next.js
 
 ### Target Keywords:
+
 - Indian food Brisbane
 - Sri Lankan food Brisbane
 - Food truck Brisbane
@@ -179,6 +182,7 @@ Create 2 images and save to `/public/`:
 ## 📋 Setup Checklist
 
 ### Before Launch:
+
 - [ ] Update phone number in `config.ts`
 - [ ] Update email in `config.ts`
 - [ ] Update address in `config.ts`
@@ -188,6 +192,7 @@ Create 2 images and save to `/public/`:
 - [ ] Update social URLs in `config.ts`
 
 ### After Launch:
+
 - [ ] Create Google Business Profile
 - [ ] Submit to Google Search Console
 - [ ] Verify domain ownership
@@ -203,6 +208,7 @@ Create 2 images and save to `/public/`:
 ## 🌐 Deployment
 
 ### Vercel (Recommended):
+
 ```bash
 # Install Vercel CLI
 npm i -g vercel
@@ -212,6 +218,7 @@ vercel
 ```
 
 ### Manual Build:
+
 ```bash
 npm run build
 npm start
@@ -222,11 +229,13 @@ npm start
 ## 📞 Support
 
 ### Documentation:
+
 - [SETUP_GUIDE.md](./SETUP_GUIDE.md) - Quick setup
 - [SEO_DOCUMENTATION.md](./SEO_DOCUMENTATION.md) - SEO guide
 - [IMAGE_REQUIREMENTS.md](./IMAGE_REQUIREMENTS.md) - Image specs
 
 ### Need to Edit?
+
 - Business info → `/utils/config.ts`
 - Menu items → `/components/FoodShowcase.tsx`
 - SEO settings → `/utils/seo/metadata.ts`

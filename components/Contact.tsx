@@ -186,7 +186,7 @@ export default function Contact() {
           <div className="flex justify-center mb-6">
             <div className="relative w-16 h-16">
               <Image
-                src="/logos/logo.svg"
+                src="/logos/logo.png"
                 alt="Kavitha Street Foods Logo"
                 fill
                 className="object-contain opacity-80"

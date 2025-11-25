@@ -118,7 +118,7 @@ export function generateLocalBusinessSchema() {
     telephone: siteConfig.contact.phone,
     email: siteConfig.contact.email,
     image: `${siteConfig.url}/og-image.jpg`,
-    logo: `${siteConfig.url}/logos/logo.svg`,
+    logo: `${siteConfig.url}/logos/logo.png`,
 
     // Cuisine
     servesCuisine: ["Indian", "Sri Lankan", "South Asian", "Street Food"],
@@ -186,8 +186,7 @@ export function generateMenuSchema() {
     "@context": "https://schema.org",
     "@type": "Menu",
     name: `${siteConfig.name} Menu`,
-    description:
-      "Authentic Indian and Sri Lankan street food menu in Brisbane",
+    description: "Authentic Indian and Sri Lankan street food menu in Brisbane",
     inLanguage: "en-AU",
     hasMenuSection: [
       {
@@ -217,7 +216,9 @@ export function generateMenuSchema() {
 /**
  * Generate breadcrumb schema
  */
-export function generateBreadcrumbSchema(items: { name: string; url: string }[]) {
+export function generateBreadcrumbSchema(
+  items: { name: string; url: string }[]
+) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",

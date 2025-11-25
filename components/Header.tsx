@@ -21,17 +21,17 @@ export default function Header() {
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
-      if (mobileMenuOpen && !target.closest('header')) {
+      if (mobileMenuOpen && !target.closest("header")) {
         setMobileMenuOpen(false);
       }
     };
 
     if (mobileMenuOpen) {
-      document.addEventListener('click', handleClickOutside);
+      document.addEventListener("click", handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     };
   }, [mobileMenuOpen]);
 
@@ -42,11 +42,12 @@ export default function Header() {
       if (element) {
         const headerOffset = 80; // Account for fixed header height
         const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - headerOffset;
 
         window.scrollTo({
           top: offsetPosition,
-          behavior: "smooth"
+          behavior: "smooth",
         });
       }
     }, 300); // Wait for menu to close
@@ -74,7 +75,7 @@ export default function Header() {
             {/* Logo Image */}
             <div className="w-12 h-12 relative">
               <Image
-                src="/logos/logo.svg"
+                src="/logos/logo.png"
                 alt="Kavitha Street Foods Logo"
                 fill
                 className="object-contain"

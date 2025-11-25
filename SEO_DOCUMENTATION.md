@@ -3,6 +3,7 @@
 ## 🎯 SEO Strategy Overview
 
 This website is optimized for **Brisbane, Australia** targeting:
+
 - Indian community in Brisbane
 - Sri Lankan community in Brisbane
 - Australian food lovers
@@ -27,7 +28,7 @@ This website is optimized for **Brisbane, Australia** targeting:
 /public/
   ├── og-image.jpg         # Social media preview (1200x630) - REQUIRED
   ├── apple-touch-icon.png # iOS home screen icon (180x180) - REQUIRED
-  └── logos/logo.svg       # Your main logo (already exists)
+  └── logos/logo.png       # Your main logo (already exists)
 ```
 
 ---
@@ -35,6 +36,7 @@ This website is optimized for **Brisbane, Australia** targeting:
 ## 🔑 Key SEO Features Implemented
 
 ### 1. **Structured Data (JSON-LD)**
+
 Located in: `app/layout.tsx`
 
 - ✅ Local Business Schema
@@ -45,11 +47,13 @@ Located in: `app/layout.tsx`
 - ✅ Contact information
 
 **What this does:** Helps Google show your business in:
+
 - Google Maps
 - Local search results
 - Rich snippets with ratings, hours, location
 
 ### 2. **Meta Tags**
+
 Located in: `utils/seo/metadata.ts`
 
 - ✅ Title tags optimized for Brisbane + Indian/Sri Lankan keywords
@@ -60,10 +64,12 @@ Located in: `utils/seo/metadata.ts`
 - ✅ Canonical URLs
 
 ### 3. **Location Targeting**
+
 Located in: `utils/config.ts`
 
 **Primary location:** South Bank Parklands, Brisbane QLD
 **Target keywords:**
+
 - "Indian food Brisbane"
 - "Sri Lankan food Brisbane"
 - "South Bank food truck"
@@ -72,6 +78,7 @@ Located in: `utils/config.ts`
 - And 20+ more variations
 
 ### 4. **Mobile Optimization**
+
 - ✅ Responsive design
 - ✅ Apple Web App capable
 - ✅ Touch icons configured
@@ -82,6 +89,7 @@ Located in: `utils/config.ts`
 ## 📊 Target Keywords (Brisbane-focused)
 
 ### Primary Keywords:
+
 1. Indian food Brisbane
 2. Sri Lankan food Brisbane
 3. Food truck Brisbane
@@ -89,6 +97,7 @@ Located in: `utils/config.ts`
 5. Indian curry Brisbane
 
 ### Secondary Keywords:
+
 6. Authentic Indian restaurant Brisbane
 7. Sri Lankan street food
 8. Biriyani Brisbane
@@ -96,6 +105,7 @@ Located in: `utils/config.ts`
 10. Kothu roti Brisbane
 
 ### Long-tail Keywords:
+
 11. "Best Indian food truck in Brisbane"
 12. "Authentic Sri Lankan curry Brisbane"
 13. "Indian street food South Bank"
@@ -107,6 +117,7 @@ Located in: `utils/config.ts`
 ## 🌍 Local SEO Setup
 
 ### Google Business Profile (Recommended Next Steps):
+
 1. Create Google Business Profile
 2. Add business name: "Kavitha Street Foods"
 3. Category: "Food Truck" / "Indian Restaurant" / "Sri Lankan Restaurant"
@@ -117,6 +128,7 @@ Located in: `utils/config.ts`
 8. Hours: Mon-Sat 11AM-9PM, Sun 12PM-8PM
 
 ### Online Directories (Submit to):
+
 - ✅ Google Business Profile
 - ✅ Yelp Australia
 - ✅ TripAdvisor
@@ -129,18 +141,21 @@ Located in: `utils/config.ts`
 ## 📝 Content Optimization
 
 ### Page Title Pattern:
+
 ```
 [Service] | [Location] | Kavitha Street Foods
 Example: "Authentic Indian & Sri Lankan Food Truck in Brisbane | Kavitha Street Foods"
 ```
 
 ### Description Pattern:
+
 ```
 Experience authentic [cuisine] in [location]. [Unique selling point].
 Located at [specific location]. Serving [target audience].
 ```
 
 ### Implemented Example:
+
 ```
 Title: "Authentic Indian & Sri Lankan Food Truck in Brisbane, Australia"
 Description: "Experience authentic Indian and Sri Lankan street food in
@@ -154,6 +169,7 @@ communities."
 ## 🔧 Configuration Files
 
 ### 1. `/utils/config.ts`
+
 **Update these values with your real information:**
 
 ```typescript
@@ -161,8 +177,8 @@ export const siteConfig = {
   name: "Kavitha Street Foods",
 
   contact: {
-    phone: "+61 412 345 678",        // ← UPDATE THIS
-    email: "hello@kavithastreetfoods.com.au",  // ← UPDATE THIS
+    phone: "+61 412 345 678", // ← UPDATE THIS
+    email: "hello@kavithastreetfoods.com.au", // ← UPDATE THIS
     address: {
       street: "South Bank Parklands", // ← UPDATE THIS
       suburb: "South Brisbane",
@@ -172,9 +188,9 @@ export const siteConfig = {
   },
 
   social: {
-    facebook: "https://facebook.com/kavithastreetfoods",  // ← ADD REAL URLS
+    facebook: "https://facebook.com/kavithastreetfoods", // ← ADD REAL URLS
     instagram: "https://instagram.com/kavithastreetfoods", // ← ADD REAL URLS
-    twitter: "https://twitter.com/kavithastreet",         // ← ADD REAL URLS
+    twitter: "https://twitter.com/kavithastreet", // ← ADD REAL URLS
   },
 
   // Keywords automatically used for SEO
@@ -186,7 +202,9 @@ export const siteConfig = {
 ```
 
 ### 2. `/utils/seo/metadata.ts`
+
 **Contains SEO generation functions:**
+
 - `generateMetadata()` - Page meta tags
 - `generateLocalBusinessSchema()` - Structured data
 - `generateMenuSchema()` - Menu structured data
@@ -198,6 +216,7 @@ export const siteConfig = {
 ## 🚀 Performance & SEO Checklist
 
 ### ✅ Already Implemented:
+
 - [x] Semantic HTML structure
 - [x] Responsive mobile design
 - [x] Fast loading (Next.js optimization)
@@ -215,6 +234,7 @@ export const siteConfig = {
 - [x] Geographic coordinates
 
 ### 📋 TODO After Launch:
+
 - [ ] Create Google Business Profile
 - [ ] Submit to Google Search Console
 - [ ] Create social media accounts (real URLs)
@@ -235,14 +255,18 @@ export const siteConfig = {
 ## 📱 Social Media Integration
 
 ### Current Setup:
+
 All social links are configured in `/utils/config.ts` and automatically used in:
+
 - Contact page footer
 - Structured data
 - Social share buttons
 
 ### How to Update:
+
 1. Create business accounts on Facebook, Instagram, Twitter
 2. Update URLs in `/utils/config.ts`:
+
 ```typescript
 social: {
   facebook: "https://facebook.com/YourActualPage",
@@ -250,6 +274,7 @@ social: {
   twitter: "https://twitter.com/YourActualHandle",
 }
 ```
+
 3. The website automatically updates everywhere!
 
 ---
@@ -257,12 +282,14 @@ social: {
 ## 🔍 How Search Engines See Your Site
 
 ### Google will index:
+
 1. **Homepage** - Main keywords
 2. **Menu Section** (#food-showcase) - Food item keywords
 3. **About Section** (#about) - Brand story, location
 4. **Contact Section** (#contact) - Business info
 
 ### Rich Results Eligible For:
+
 - ⭐ Local Business listing
 - 📍 Google Maps integration
 - 🍽️ Menu items display
@@ -276,16 +303,19 @@ social: {
 ## 📈 Expected SEO Results
 
 ### Short-term (1-3 months):
+
 - Indexed by Google
 - Appear in "food truck brisbane" searches
 - Show in Google Maps (if Business Profile created)
 
 ### Medium-term (3-6 months):
+
 - Rank for "[cuisine] brisbane" keywords
 - Build local citations
 - Accumulate reviews
 
 ### Long-term (6-12 months):
+
 - Top 10 for multiple Brisbane food keywords
 - Strong Google Business Profile presence
 - Featured in local food guides/blogs
@@ -295,16 +325,19 @@ social: {
 ## 🛠️ Maintenance
 
 ### Monthly:
+
 - Post on social media (links in config)
 - Respond to reviews
 - Update menu if items change
 
 ### Quarterly:
+
 - Check Google Search Console
 - Review keyword rankings
 - Update content if needed
 
 ### Annually:
+
 - Review all business information
 - Update photos
 - Refresh menu descriptions
@@ -314,6 +347,7 @@ social: {
 ## 📞 Support
 
 All SEO configurations are in:
+
 1. `/utils/config.ts` - Business info
 2. `/utils/seo/metadata.ts` - SEO functions
 3. `/app/layout.tsx` - Page setup
