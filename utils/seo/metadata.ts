@@ -168,7 +168,7 @@ export function generateLocalBusinessSchema() {
     sameAs: [
       siteConfig.social.facebook,
       siteConfig.social.instagram,
-      siteConfig.social.twitter,
+      siteConfig.social.tiktok,
     ],
 
     // Additional features
