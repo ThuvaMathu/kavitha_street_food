@@ -53,7 +53,7 @@ export default function Hero() {
         >
           <div className="relative w-32 h-32 md:w-40 md:h-40">
             <Image
-              src="/logos/logo.png"
+              src="/app-logo.png"
               alt="Kavitha Street Foods Logo"
               fill
               className="object-contain drop-shadow-2xl"

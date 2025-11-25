@@ -52,7 +52,7 @@ export default function RootLayout({
           }}
         />
         {/* Favicon */}
-        <link rel="icon" href="/logos/logo.png" type="image/png" />
+        <link rel="icon" href="/app-logo.png" type="image/png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
       <body

@@ -75,7 +75,7 @@ export default function Header() {
             {/* Logo Image */}
             <div className="w-12 h-12 relative">
               <Image
-                src="/logos/logo.png"
+                src="/app-logo.png"
                 alt="Kavitha Street Foods Logo"
                 fill
                 className="object-contain"
